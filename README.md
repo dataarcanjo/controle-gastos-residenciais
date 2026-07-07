@@ -90,7 +90,7 @@ Essa separação torna a persistência trocável (ex.: para Entity Framework Cor
 
 Erros seguem o formato `{ "error": "mensagem" }`, com `404` para entidade não encontrada e `400` para violação de regra de negócio.
 
-Mais detalhes técnicos (validações, tratamento de erros, exemplos de `curl`): veja [`controledegastos/README.md`](controledegastos/README.md).
+Mais detalhes técnicos (validações, tratamento de erros, exemplos de `curl`): veja [`controlegastos/README.md`](controlegastos/README.md).
 
 ## Arquitetura do front-end
 
