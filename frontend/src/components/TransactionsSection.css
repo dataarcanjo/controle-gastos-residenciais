@@ -1,0 +1,63 @@
+.inline-form__notice {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--red-ink);
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.ledger-table {
+  min-width: 480px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.ledger-table th {
+  text-align: left;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 2px solid var(--line-strong);
+}
+
+.ledger-table td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.ledger-table__value {
+  text-align: right;
+}
+
+.type-tag {
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+}
+
+.type-tag--income {
+  background: var(--brass-bg);
+  color: var(--brass);
+}
+
+.type-tag--expense {
+  background: var(--red-bg);
+  color: var(--red-ink);
+}
+
+.value--income {
+  color: var(--brass);
+}
+
+.value--expense {
+  color: var(--red-ink);
+}

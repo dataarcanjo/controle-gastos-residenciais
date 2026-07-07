@@ -1,0 +1,149 @@
+.app {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* ---------- Masthead ---------- */
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-bottom: 1.75rem;
+  margin-bottom: 2rem;
+  border-bottom: 3px double var(--line-strong);
+}
+
+.masthead__title h1 {
+  font-size: 2.4rem;
+  letter-spacing: 0.01em;
+}
+
+.masthead__title p {
+  margin: 0.25rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.masthead__ribbon {
+  display: flex;
+  gap: 1.75rem;
+  margin: 0;
+}
+
+.ribbon-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-align: right;
+}
+
+.ribbon-stat dt {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.ribbon-stat dd {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.ribbon-stat--balance dd {
+  font-weight: 600;
+}
+
+/* ---------- Layout: tabs + content ---------- */
+.layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.ledger-tabs {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-top: 1.75rem;
+}
+
+.ledger-tab {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  text-align: left;
+  background: var(--brass-bg);
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  border-right: none;
+  border-radius: var(--radius) 0 0 var(--radius);
+  padding: 0.85rem 1.1rem;
+  margin-bottom: 0.6rem;
+  margin-right: -1px;
+  cursor: pointer;
+  writing-mode: horizontal-tb;
+  transition: transform 0.15s ease;
+}
+
+.ledger-tab:hover {
+  transform: translateX(-2px);
+}
+
+.ledger-tab--active {
+  background: var(--paper-card);
+  color: var(--ink);
+  font-weight: 600;
+  border-color: var(--line-strong);
+  padding-right: 1.3rem;
+  z-index: 1;
+  position: relative;
+}
+
+.content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.value--income {
+  color: var(--brass);
+}
+
+.value--expense {
+  color: var(--red-ink);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .masthead__ribbon {
+    gap: 1.1rem;
+  }
+
+  .ribbon-stat dd {
+    font-size: 1.05rem;
+  }
+
+  .layout {
+    flex-direction: column;
+  }
+
+  .ledger-tabs {
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    width: 100%;
+  }
+
+  .ledger-tab {
+    flex: 1;
+    text-align: center;
+    border-radius: var(--radius);
+    border-right: 1px solid var(--line);
+    margin-right: 0.5rem;
+  }
+
+  .ledger-tab--active {
+    padding-right: 1.1rem;
+  }
+}

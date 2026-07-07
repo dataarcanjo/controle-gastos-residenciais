@@ -1,0 +1,80 @@
+/* ============================================================
+   Design tokens — "Livro-Caixa"
+   Identidade visual inspirada em livros-caixa e passbooks bancários
+   antigos: papel frio, tinta azul-marinho para o texto, latão para
+   valores positivos e tinta vermelha para valores negativos — a
+   convenção contábil real de "estar no vermelho".
+   ============================================================ */
+:root {
+  --paper: #E9EDE8;
+  --paper-card: #FBFAF6;
+  --ink: #1B2A3A;
+  --ink-soft: #48586A;
+  --line: #C9D1C8;
+  --line-strong: #1B2A3A;
+  --brass: #9C7A24;
+  --brass-bg: #F1E7CB;
+  --red-ink: #8C3232;
+  --red-bg: #F3DEDE;
+  --focus: #2F6FA3;
+
+  --font-display: "Newsreader", "Iowan Old Style", serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --radius: 3px;
+  --shadow-card: 0 1px 2px rgba(27, 42, 58, 0.06), 0 1px 0 rgba(27, 42, 58, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--paper);
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px);
+  background-size: 100% 2.1rem;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

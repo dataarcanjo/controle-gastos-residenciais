@@ -1,0 +1,17 @@
+## .NET
+bin/
+obj/
+*.user
+
+## Dados persistidos localmente (gerados em tempo de execução)
+**/App_Data/
+
+## IDE
+.vs/
+.vscode/
+.idea/
+*.suo
+
+## OS
+.DS_Store
+Thumbs.db

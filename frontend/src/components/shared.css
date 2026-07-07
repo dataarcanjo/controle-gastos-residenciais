@@ -1,0 +1,141 @@
+.section {
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  padding: 1.75rem 2rem 2rem;
+}
+
+.section__header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.section__header h2 {
+  font-size: 1.5rem;
+}
+
+.section__hint {
+  margin: 0.35rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  max-width: 56ch;
+}
+
+.inline-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px dashed var(--line);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  flex: 1 1 200px;
+}
+
+.field--narrow {
+  flex: 0 1 120px;
+}
+
+.field input,
+.field select {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.55rem 0.65rem;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: var(--focus);
+}
+
+.btn {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 500;
+  border-radius: var(--radius);
+  padding: 0.6rem 1.1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn--primary {
+  background: var(--ink);
+  color: var(--paper-card);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: var(--ink-soft);
+}
+
+.btn--ghost {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--ink-soft);
+}
+
+.btn--ghost:hover {
+  border-color: var(--ink-soft);
+  color: var(--ink);
+}
+
+.btn--danger {
+  background: var(--red-ink);
+  color: #fff;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.badge--minor {
+  background: var(--red-bg);
+  color: var(--red-ink);
+}
+
+.empty-state {
+  color: var(--ink-soft);
+  font-style: italic;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.confirm-row {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--line);
+  font-size: 0.82rem;
+  color: var(--red-ink);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.confirm-row__actions {
+  display: flex;
+  gap: 0.5rem;
+}

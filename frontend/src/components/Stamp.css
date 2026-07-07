@@ -1,0 +1,25 @@
+.stamp {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border: 1.5px solid currentColor;
+  border-radius: 999px;
+  transform: rotate(-4deg);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.stamp--brass {
+  color: var(--brass);
+  background: var(--brass-bg);
+}
+
+.stamp--red {
+  color: var(--red-ink);
+  background: var(--red-bg);
+}

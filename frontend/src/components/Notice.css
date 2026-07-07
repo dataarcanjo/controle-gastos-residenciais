@@ -1,0 +1,33 @@
+.notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+
+.notice--error {
+  background: var(--red-bg);
+  border-color: var(--red-ink);
+  color: var(--red-ink);
+}
+
+.notice--success {
+  background: var(--brass-bg);
+  border-color: var(--brass);
+  color: var(--brass);
+}
+
+.notice__dismiss {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 0.2rem;
+}

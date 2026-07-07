@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Referência ao framework compartilhado apenas para ter acesso aos tipos de
+         injeção de dependência (Microsoft.Extensions.DependencyInjection.Abstractions),
+         sem precisar restaurar nenhum pacote NuGet adicional. -->
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ControleGastos.Domain\ControleGastos.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
